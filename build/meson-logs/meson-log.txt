@@ -1,0 +1,201 @@
+Build started at 2024-01-16T11:42:33.609890
+Main binary: /usr/bin/python3
+Build Options: 
+Python system: Linux
+The Meson build system
+Version: 1.2.3
+Source dir: /home/bylotonix/libinput-config
+Build dir: /home/bylotonix/libinput-config/build
+Build type: native build
+Project name: libinput-config
+Project version: undefined
+-----------
+Detecting compiler via: `cc --version` -> 0
+stdout:
+cc (GCC) 13.2.1 20231205 (Red Hat 13.2.1-6)
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+-----------
+Running command: cc -E -dM -
+-----
+-----------
+Detecting linker via: `cc -Wl,--version` -> 0
+stdout:
+GNU ld version 2.40-13.fc39
+Copyright (C) 2023 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) a later version.
+This program has absolutely no warranty.
+-----------
+stderr:
+collect2 version 13.2.1 20231205 (Red Hat 13.2.1-6)
+/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0ewGkw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/13 -L/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/13/../../.. --version -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/13/crtend.o /usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crtn.o
+-----------
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command:  /home/bylotonix/libinput-config/build/meson-private/sanitycheckc.exe
+C compiler for the host machine: cc (gcc 13.2.1 "cc (GCC) 13.2.1 20231205 (Red Hat 13.2.1-6)")
+C linker for the host machine: cc ld.bfd 2.40-13
+-----------
+Detecting linker via: `gcc-ar --version` -> 0
+stdout:
+GNU ar version 2.40-13.fc39
+Copyright (C) 2023 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) any later version.
+This program has absolutely no warranty.
+-----------
+-----------
+Detecting compiler via: `cc --version` -> 0
+stdout:
+cc (GCC) 13.2.1 20231205 (Red Hat 13.2.1-6)
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+-----------
+Running command: cc -E -dM -
+-----
+-----------
+Detecting linker via: `cc -Wl,--version` -> 0
+stdout:
+GNU ld version 2.40-13.fc39
+Copyright (C) 2023 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) a later version.
+This program has absolutely no warranty.
+-----------
+stderr:
+collect2 version 13.2.1 20231205 (Red Hat 13.2.1-6)
+/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1j2orh.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/13 -L/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/13/../../.. --version -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/13/crtend.o /usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crtn.o
+-----------
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command:  /home/bylotonix/libinput-config/build/meson-private/sanitycheckc.exe
+C compiler for the build machine: cc (gcc 13.2.1 "cc (GCC) 13.2.1 20231205 (Red Hat 13.2.1-6)")
+C linker for the build machine: cc ld.bfd 2.40-13
+-----------
+Detecting linker via: `gcc-ar --version` -> 0
+stdout:
+GNU ar version 2.40-13.fc39
+Copyright (C) 2023 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) any later version.
+This program has absolutely no warranty.
+-----------
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Pkg-config binary for 1 is not cached.
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default Pkg-config fallback at pkg-config
+Found pkg-config: /usr/bin/pkg-config (1.9.5)
+Determining dependency 'libinput' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+-----------
+Called: `/usr/bin/pkg-config --modversion libinput` -> 0
+stdout:
+1.24.0
+-----------
+env[PKG_CONFIG_PATH]: 
+-----------
+Called: `/usr/bin/pkg-config --cflags libinput` -> 0
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+-----------
+Called: `/usr/bin/pkg-config --libs libinput` -> 0
+stdout:
+-L/usr/lib64 -linput
+-----------
+env[PKG_CONFIG_PATH]: 
+-----------
+Called: `/usr/bin/pkg-config --libs libinput` -> 0
+stdout:
+-linput
+-----------
+Running compile:
+Working directory:  /home/bylotonix/libinput-config/build/meson-private/tmpt214y9c1
+Code:
+ 
+        #include<stdio.h>
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        }
+-----------
+Command line: `cc /home/bylotonix/libinput-config/build/meson-private/tmpt214y9c1/testfile.c -o /home/bylotonix/libinput-config/build/meson-private/tmpt214y9c1/output.exe -D_FILE_OFFSET_BITS=64 -O0` -> 0
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Running compile:
+Working directory:  /home/bylotonix/libinput-config/build/meson-private/tmpw_k8coys
+Code:
+ 
+-----------
+Command line: `cc /home/bylotonix/libinput-config/build/meson-private/tmpw_k8coys/testfile.c -o /home/bylotonix/libinput-config/build/meson-private/tmpw_k8coys/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs` -> 0
+stdout:
+install: /usr/lib/gcc/x86_64-redhat-linux/13/
+programs: =/usr/libexec/gcc/x86_64-redhat-linux/13/:/usr/libexec/gcc/x86_64-redhat-linux/13/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/13/:/usr/lib/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/13/../../../../x86_64-redhat-linux/bin/x86_64-redhat-linux/13/:/usr/lib/gcc/x86_64-redhat-linux/13/../../../../x86_64-redhat-linux/bin/
+libraries: =/usr/lib/gcc/x86_64-redhat-linux/13/:/usr/lib/gcc/x86_64-redhat-linux/13/../../../../x86_64-redhat-linux/lib/x86_64-redhat-linux/13/:/usr/lib/gcc/x86_64-redhat-linux/13/../../../../x86_64-redhat-linux/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/13/../../../x86_64-redhat-linux/13/:/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/:/lib/x86_64-redhat-linux/13/:/lib/../lib64/:/usr/lib/x86_64-redhat-linux/13/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/13/../../../../x86_64-redhat-linux/lib/:/usr/lib/gcc/x86_64-redhat-linux/13/../../../:/lib/:/usr/lib/
+-----------
+Run-time dependency libinput found: YES 1.24.0
+Pkg-config binary for 1 is cached.
+Determining dependency 'libudev' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+-----------
+Called: `/usr/bin/pkg-config --modversion libudev` -> 0
+stdout:
+254
+-----------
+env[PKG_CONFIG_PATH]: 
+-----------
+Called: `/usr/bin/pkg-config --cflags libudev` -> 0
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+-----------
+Called: `/usr/bin/pkg-config --libs libudev` -> 0
+stdout:
+-L/usr/lib64 -ludev
+-----------
+env[PKG_CONFIG_PATH]: 
+-----------
+Called: `/usr/bin/pkg-config --libs libudev` -> 0
+stdout:
+-ludev
+-----------
+Run-time dependency libudev found: YES 254
+Running compile:
+Working directory:  /home/bylotonix/libinput-config/build/meson-private/tmpfb3d9y4e
+Code:
+ int main(void) { return 0; }
+
+-----------
+Command line: `cc /home/bylotonix/libinput-config/build/meson-private/tmpfb3d9y4e/testfile.c -o /home/bylotonix/libinput-config/build/meson-private/tmpfb3d9y4e/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -ldl -Wl,--end-group -Wl,--allow-shlib-undefined` -> 0
+Library dl found: YES
+Build targets in project: 2
+
+Found ninja-1.11.1 at /usr/bin/ninja
+Failed to guess install tag for install script: /home/bylotonix/libinput-config/scripts/preload.sh /usr/local/lib64 libinput-config
+Failed to guess install tag for install script: /home/bylotonix/libinput-config/scripts/preload.sh /usr/local/lib64 libinput-config
+WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
