@@ -94,8 +94,7 @@ sudo nano /etc/libinput.conf
 sudo dnf install xwaylandvideobridge
 ```
 
-
-### Additional changes:
+## Additional changes
 ```
 sudo dnf install neofetch --setop='install_weak_deps=False'
 sudo dnf remove orca
@@ -114,8 +113,13 @@ systemctl --user mask evolution-addressbook-factory.service evolution-calendar-f
 systemctl --user mask org.gnome.SettingsDaemon.Sharing.service
 sudo dnf remove gnome-boxes-45.0-1.fc39.x86_64 gnome-logs-45~beta-1.fc39.x86_64 gnome-font-viewer-45.0-1.fc39.x86_64 gnome-remote-desktop-45.1-1.fc39.x86_64
 ```
-
-
+## No Password
+```
+sudo visudo /etc/sudoers.d/010_YOURNICKNAME-nopasswd
+```
+```
+bylotonix ALL=(ALL) NOPASSWD: ALL
+```
 ## Gnome Extensions
 * [Compiz Windows Effect](https://extensions.gnome.org/extension/3210/compiz-windows-effect/)
 * [Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/)
@@ -131,7 +135,7 @@ sudo dnf remove gnome-boxes-45.0-1.fc39.x86_64 gnome-logs-45~beta-1.fc39.x86_64 
 ## Apps
 ```
 sudo dnf install unzip p7zip p7zip-plugins unrar
-sudo dnf install kolourpaint obs-studio blender htop audacity audacious vlc
+sudo dnf install kolourpaint obs-studio blender htop audacity audacious vlc file-roller
 ```
 [VSCode](https://code.visualstudio.com/sha/download?build=stable&os=linux-rpm-x64)
 ## Firefox Gnome Theme:
