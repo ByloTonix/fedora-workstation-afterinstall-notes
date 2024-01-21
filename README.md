@@ -2,13 +2,19 @@
 Things I do after installing Fedora Workstation
 
 ## Root User
-``sudo passwd root``
+```
+sudo passwd root
+```
 
 ## Changing Hostname
-``sudo hostnamectl set-hostname "asus"``
+```
+sudo hostnamectl set-hostname "asus"
+```
 
 ## DNF Config
-`sudo nano /etc/dnf/dnf.conf` 
+```
+sudo nano /etc/dnf/dnf.conf
+``` 
 ```
 [main]
 gpgcheck=True
@@ -19,12 +25,18 @@ skip_if_unavailable=True
 max_parallel_downloads=10
 ``` 
 ## Update 
-``sudo dnf -y update
-sudo dnf -y upgrade --refresh``
+```
+sudo dnf -y update
+sudo dnf -y upgrade --refresh
+```
 
 ## RPM Fusion
-``sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm``
-``sudo dnf groupupdate core``
+```
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+```
+```
+sudo dnf groupupdate core
+```
 
 ## Firmware
 ```
@@ -44,21 +56,28 @@ sudo dnf group upgrade --with-optional Multimedia
 ````
 
 ## Hardware Acceleration (AMD) 
-`sudo dnf install ffmpeg ffmpeg-libs libva libva-utils`
 ```
+sudo dnf install ffmpeg ffmpeg-libs libva libva-utils
 sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld
 ```
-`sudo dnf config-manager --set-enabled fedora-cisco-openh264`
-`sudo dnf install -y openh264 gstreamer1-plugin-openh264 mozilla-openh264`
+```
+sudo dnf config-manager --set-enabled fedora-cisco-openh264
+sudo dnf install -y openh264 gstreamer1-plugin-openh264 mozilla-openh264
+```
 
 ## Laptop Sleep Mode Fix
-`sudo grubby --update-kernel=ALL --args="mem_sleep_default=s2idle"`
+```
+sudo grubby --update-kernel=ALL --args="mem_sleep_default=s2idle"
+```
 
 ## Disable Gnome Software Autostart
-`sudo rm /etc/xdg/autostart/org.gnome.Software.desktop`
+```
+sudo rm /etc/xdg/autostart/org.gnome.Software.desktop
+```
 
 ## Decreasing TouchPad Scroll Speed
-```sudo dnf install libinput-devel
+```
+sudo dnf install libinput-devel
 git clone https://gitlab.com/warningnonpotablewater/libinput-config
 sudo dnf install make cmake automake gcc gcc-c++ kernel-devel
 sudo dnf install rust-libudev-devel-0.3.0-3.fc39.noarch --setop='install_weak_deps=False'
@@ -71,11 +90,14 @@ sudo nano /etc/libinput.conf
 `scroll-factor=0.25`
 
 ## XWayland Video Bridge
-``sudo dnf install xwaylandvideobridge``
+```
+sudo dnf install xwaylandvideobridge
+```
 
 
 ### Additional changes:
-```sudo dnf install neofetch --setop='install_weak_deps=False'
+```
+sudo dnf install neofetch --setop='install_weak_deps=False'
 sudo dnf remove orca
 gsettings set org.gnome.desktop.peripherals.keyboard remember-numlock-state true
 sudo dnf remove abrt
@@ -90,7 +112,6 @@ systemctl --user mask org.gnome.SettingsDaemon.Smartcard
 systemctl --user mask org.gnome.SettingsDaemon.Housekeeping.service 
 systemctl --user mask evolution-addressbook-factory.service evolution-calendar-factory.service evolution-source-registry.service
 systemctl --user mask org.gnome.SettingsDaemon.Sharing.service
-
 sudo dnf remove gnome-boxes-45.0-1.fc39.x86_64 gnome-logs-45~beta-1.fc39.x86_64 gnome-font-viewer-45.0-1.fc39.x86_64 gnome-remote-desktop-45.1-1.fc39.x86_64
 ```
 
@@ -108,6 +129,10 @@ sudo dnf remove gnome-boxes-45.0-1.fc39.x86_64 gnome-logs-45~beta-1.fc39.x86_64 
 * [Wireless HID](https://extensions.gnome.org/extension/4228/wireless-hid/)
 
 ## Apps
- `sudo dnf install -y unzip p7zip p7zip-plugins unrar`
-* Firefox Gnome Theme:
-```curl -s -o- https://raw.githubusercontent.com/rafaelmardojai/firefox-gnome-theme/master/scripts/install-by-curl.sh | bash```
+ ```
+ sudo dnf install -y unzip p7zip p7zip-plugins unrar
+```
+## Firefox Gnome Theme:
+```
+curl -s -o- https://raw.githubusercontent.com/rafaelmardojai/firefox-gnome-theme/master/scripts/install-by-curl.sh | bash
+```
