@@ -129,9 +129,11 @@ sudo dnf remove gnome-boxes-45.0-1.fc39.x86_64 gnome-logs-45~beta-1.fc39.x86_64 
 * [Wireless HID](https://extensions.gnome.org/extension/4228/wireless-hid/)
 
 ## Apps
- ```
- sudo dnf install -y unzip p7zip p7zip-plugins unrar
 ```
+sudo dnf install unzip p7zip p7zip-plugins unrar
+sudo dnf install kolourpaint obs-studio blender htop audacity audacious vlc
+```
+[VSCode](https://code.visualstudio.com/sha/download?build=stable&os=linux-rpm-x64)
 ## Firefox Gnome Theme:
 ```
 curl -s -o- https://raw.githubusercontent.com/rafaelmardojai/firefox-gnome-theme/master/scripts/install-by-curl.sh | bash
