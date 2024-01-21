@@ -1,19 +1,18 @@
- # Fedora Workstation AfterInstall Notes
-Things I do after installing Fedora Workstation
+<h1 align="center">Fedora Workstation AfterInstall Notes</h1>
+<h4 align="center">Things I do after installing Fedora Workstation</h4>
 
+![alt text](https://github.com/ByloTonix/fedora-workstation-afterinstall-notes/blob/main/screenshot0.png)
 
+## Enabling Root User && Changing Hostname
 
-## Root User
 ```
 sudo passwd root
 ```
-
-## Changing Hostname
 ```
 sudo hostnamectl set-hostname "asus"
 ```
 
-## DNF Config
+## DNF Config for a slightly faster download
 ```
 sudo nano /etc/dnf/dnf.conf
 ``` 
@@ -26,7 +25,7 @@ best=False
 skip_if_unavailable=True
 max_parallel_downloads=10
 ``` 
-## Update 
+## System Updating
 ```
 sudo dnf -y update
 sudo dnf -y upgrade --refresh
@@ -48,15 +47,14 @@ sudo fwupdmgr get-updates
 sudo fwupdmgr update
 ```
 
-## Codecs
-````
+## Additional Codecs
+```
 sudo dnf groupupdate 'core' 'multimedia' 'sound-and-video' --setop='install_weak_deps=False' --exclude='PackageKit-gstreamer-plugin' --allowerasing && sync
 sudo dnf swap 'ffmpeg-free' 'ffmpeg' --allowerasing
 sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel ffmpeg gstreamer-ffmpeg
 sudo dnf install lame\* --exclude=lame-devel
 sudo dnf group upgrade --with-optional Multimedia
-````
-
+```
 ## Hardware Acceleration (AMD) 
 ```
 sudo dnf install ffmpeg ffmpeg-libs libva libva-utils
@@ -89,31 +87,24 @@ sudo ninja install
 sudo dnf remove rust-libudev-devel-0.3.0-3.fc39.noarch
 sudo nano /etc/libinput.conf
 ```
-`scroll-factor=0.25`
-
-## XWayland Video Bridge
 ```
-sudo dnf install xwaylandvideobridge
+scroll-factor=0.25
 ```
 
-## Additional changes
+
+## Additional Changes
 ```
-sudo dnf install neofetch --setop='install_weak_deps=False'
-sudo dnf remove orca
+sudo dnf remove gnome-boxes gnome-logs gnome-font-viewer gnome-remote-desktop orca abrt python2
 gsettings set org.gnome.desktop.peripherals.keyboard remember-numlock-state true
-sudo dnf remove abrt
-sudo dnf remove python2
 systemctl disable gnome-software-service-proxy
 systemctl disable evolution-data-server
-systemctl list
 systemctl --user mask org.gnome.SettingsDaemon.Wacom
-systemctl --user mask org.gnome.SettingsDaemon.PrintNotifications.
+systemctl --user mask org.gnome.SettingsDaemon.PrintNotifications
 systemctl --user mask org.gnome.SettingsDaemon.A11ySettings
 systemctl --user mask org.gnome.SettingsDaemon.Smartcard
-systemctl --user mask org.gnome.SettingsDaemon.Housekeeping.service 
+systemctl --user mask org.gnome.SettingsDaemon.Housekeeping
 systemctl --user mask evolution-addressbook-factory.service evolution-calendar-factory.service evolution-source-registry.service
-systemctl --user mask org.gnome.SettingsDaemon.Sharing.service
-sudo dnf remove gnome-boxes-45.0-1.fc39.x86_64 gnome-logs-45~beta-1.fc39.x86_64 gnome-font-viewer-45.0-1.fc39.x86_64 gnome-remote-desktop-45.1-1.fc39.x86_64
+systemctl --user mask org.gnome.SettingsDaemon.Sharing
 ```
 ## No Password
 ```
@@ -145,6 +136,8 @@ bylotonix ALL=(ALL) NOPASSWD: ALL
 ```
 sudo dnf install unzip p7zip p7zip-plugins unrar
 sudo dnf install kolourpaint obs-studio blender htop audacity audacious vlc file-roller
+sudo dnf install neofetch --setop='install_weak_deps=False'
+sudo dnf install xwaylandvideobridge
 ```
 [VSCode](https://code.visualstudio.com/sha/download?build=stable&os=linux-rpm-x64)
 ## Firefox Gnome Theme:
