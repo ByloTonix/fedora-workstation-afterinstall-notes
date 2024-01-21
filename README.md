@@ -1,6 +1,8 @@
  # Fedora Workstation AfterInstall Notes
 Things I do after installing Fedora Workstation
 
+
+
 ## Root User
 ```
 sudo passwd root
@@ -131,6 +133,13 @@ bylotonix ALL=(ALL) NOPASSWD: ALL
 * [Bluetooth Quick Connect](https://extensions.gnome.org/extension/1401/bluetooth-quick-connect/)
 * [App Indicator Support](https://extensions.gnome.org/extension/615/appindicator-support/)
 * [Wireless HID](https://extensions.gnome.org/extension/4228/wireless-hid/)
+
+* [Battery Time](https://extensions.gnome.org/extension/1475/battery-time/)
+* [Burn My Windows](https://extensions.gnome.org/extension/4679/burn-my-windows/)
+* [Compact Top Bar](https://extensions.gnome.org/extension/5669/compact-top-bar/)
+* [Compiz alike magic lamp effect](https://extensions.gnome.org/extension/3740/compiz-alike-magic-lamp-effect/)
+* [Desktop Cube](https://extensions.gnome.org/extension/4648/desktop-cube/)
+* [Removable Drive Menu](https://extensions.gnome.org/extension/7/removable-drive-menu/)
 
 ## Apps
 ```
