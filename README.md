@@ -131,6 +131,8 @@ bylotonix ALL=(ALL) NOPASSWD: ALL
 * [Compiz alike magic lamp effect](https://extensions.gnome.org/extension/3740/compiz-alike-magic-lamp-effect/)
 * [Desktop Cube](https://extensions.gnome.org/extension/4648/desktop-cube/)
 * [Removable Drive Menu](https://extensions.gnome.org/extension/7/removable-drive-menu/)
+* [Notification Banner Position](https://extensions.gnome.org/extension/4105/notification-banner-position/)
+* [Flippery Move Clock](https://extensions.gnome.org/extension/2/move-clock/)
 
 ## Apps
 ```
