@@ -140,6 +140,7 @@ sudo dnf install unzip p7zip p7zip-plugins unrar
 sudo dnf install kolourpaint obs-studio blender htop audacity audacious vlc file-roller
 sudo dnf install neofetch --setop='install_weak_deps=False'
 sudo dnf install xwaylandvideobridge
+sudo dnf install waydroid
 ```
 [VSCode](https://code.visualstudio.com/sha/download?build=stable&os=linux-rpm-x64)
 ## Firefox Gnome Theme:
