@@ -9,7 +9,7 @@
 sudo passwd root
 ```
 ```
-sudo hostnamectl set-hostname "asus"
+sudo hostnamectl set-hostname "hp"
 ```
 
 ## DNF Config for a slightly faster download
@@ -27,8 +27,7 @@ max_parallel_downloads=10
 ``` 
 ## System Updating
 ```
-sudo dnf -y update
-sudo dnf -y upgrade --refresh
+sudo dnf -y update --refresh
 ```
 
 ## RPM Fusion
@@ -137,7 +136,6 @@ bylotonix ALL=(ALL) NOPASSWD: ALL
 sudo dnf install unzip p7zip p7zip-plugins unrar
 sudo dnf install kolourpaint obs-studio blender htop audacity audacious vlc file-roller
 sudo dnf install neofetch --setop='install_weak_deps=False'
-sudo dnf install xwaylandvideobridge
 sudo dnf install waydroid
 ```
 [VSCode](https://code.visualstudio.com/sha/download?build=stable&os=linux-rpm-x64)
