@@ -77,11 +77,11 @@ sudo rm /etc/xdg/autostart/org.gnome.Software.desktop
 sudo dnf install libinput-devel
 git clone https://gitlab.com/warningnonpotablewater/libinput-config
 sudo dnf install make cmake automake gcc gcc-c++ kernel-devel
-sudo dnf install rust-libudev-devel-0.3.0-3.fc39.noarch --setop='install_weak_deps=False'
+sudo dnf install rust-libudev-devel --setop='install_weak_deps=False'
 cd libinput-config/ && meson build
 cd build/ && ninja
 sudo ninja install
-sudo dnf remove rust-libudev-devel-0.3.0-3.fc39.noarch
+sudo dnf remove rust-libudev-devel.noarch
 sudo nano /etc/libinput.conf
 ```
 ```
