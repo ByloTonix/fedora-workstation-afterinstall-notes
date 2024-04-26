@@ -105,15 +105,15 @@ systemctl --user mask org.gnome.SettingsDaemon.Sharing
 ```
 ## No Password
 ```
-sudo visudo /etc/sudoers.d/010_YOURNICKNAME-nopasswd
+sudo visudo /etc/sudoers.d/010_revoqaux-nopasswd
 ```
 ```
-bylotonix ALL=(ALL) NOPASSWD: ALL
+revoqaux ALL=(ALL) NOPASSWD: ALL
 ```
 ## Gnome Extensions
 * [Compiz Windows Effect](https://extensions.gnome.org/extension/3210/compiz-windows-effect/)
 * [Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/)
-* [Rounded Windows Corners](https://extensions.gnome.org/extension/5237/rounded-window-corners/) from comments
+* [Rounded Windows Corners](https://github.com/garaevdi/rounded-window-corners)
 * [Fullscreen to Empty Workspace](https://extensions.gnome.org/extension/6072/fullscreen-to-empty-workspace/)
 * [Windows Is Ready Notification Remover](https://extensions.gnome.org/extension/1007/window-is-ready-notification-remover/)
 * [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
@@ -139,7 +139,3 @@ sudo dnf install neofetch --setop='install_weak_deps=False'
 sudo dnf install waydroid
 ```
 [VSCode](https://code.visualstudio.com/sha/download?build=stable&os=linux-rpm-x64)
-## Firefox Gnome Theme:
-```
-curl -s -o- https://raw.githubusercontent.com/rafaelmardojai/firefox-gnome-theme/master/scripts/install-by-curl.sh | bash
-```
