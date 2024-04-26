@@ -85,3 +85,6 @@ revoqaux ALL=(ALL) NOPASSWD: ALL
 * [App Indicator Support](https://extensions.gnome.org/extension/615/appindicator-support/)
 * [Wireless HID](https://extensions.gnome.org/extension/4228/wireless-hid/)
 * [Legacy GTK3 Theme Scheme Auto Switcher](https://github.com/mukul29/legacy-theme-auto-switcher-gnome-extension)
+
+## Other
+* [Adwaita theme for GTK3](https://github.com/lassekongo83/adw-gtk3)
