@@ -27,7 +27,7 @@ max_parallel_downloads=10
 ``` 
 ## System Updating
 ```
-sudo dnf -y update --refresh
+dnf check-update
 ```
 
 ## RPM Fusion
