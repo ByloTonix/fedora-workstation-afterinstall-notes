@@ -33,8 +33,6 @@ sudo dnf -y update --refresh
 ## RPM Fusion
 ```
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-```
-```
 sudo dnf groupupdate core
 ```
 
@@ -50,26 +48,8 @@ sudo fwupdmgr update
 ```
 sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-plugin-libav --exclude=gstreamer1-plugins-bad-free-devel
 sudo dnf install lame\* --exclude=lame-devel
+sudo dnf install gstreamer1-plugin-openh264 mozilla-openh264
 sudo dnf group upgrade --with-optional Multimedia
-```
-## Hardware Acceleration (AMD) 
-```
-sudo dnf install ffmpeg ffmpeg-libs libva libva-utils
-sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld
-```
-```
-sudo dnf config-manager --set-enabled fedora-cisco-openh264
-sudo dnf install -y openh264 gstreamer1-plugin-openh264 mozilla-openh264
-```
-
-## Laptop Sleep Mode Fix
-```
-sudo grubby --update-kernel=ALL --args="mem_sleep_default=s2idle"
-```
-
-## Disable Gnome Software Autostart
-```
-sudo rm /etc/xdg/autostart/org.gnome.Software.desktop
 ```
 
 ## Decreasing TouchPad Scroll Speed
@@ -88,21 +68,6 @@ sudo nano /etc/libinput.conf
 scroll-factor=0.25
 ```
 
-
-## Additional Changes
-```
-sudo dnf remove gnome-boxes gnome-logs gnome-font-viewer gnome-remote-desktop orca abrt python2
-gsettings set org.gnome.desktop.peripherals.keyboard remember-numlock-state true
-systemctl disable gnome-software-service-proxy
-systemctl disable evolution-data-server
-systemctl --user mask org.gnome.SettingsDaemon.Wacom
-systemctl --user mask org.gnome.SettingsDaemon.PrintNotifications
-systemctl --user mask org.gnome.SettingsDaemon.A11ySettings
-systemctl --user mask org.gnome.SettingsDaemon.Smartcard
-systemctl --user mask org.gnome.SettingsDaemon.Housekeeping
-systemctl --user mask evolution-addressbook-factory.service evolution-calendar-factory.service evolution-source-registry.service
-systemctl --user mask org.gnome.SettingsDaemon.Sharing
-```
 ## No Password
 ```
 sudo visudo /etc/sudoers.d/010_revoqaux-nopasswd
@@ -111,31 +76,12 @@ sudo visudo /etc/sudoers.d/010_revoqaux-nopasswd
 revoqaux ALL=(ALL) NOPASSWD: ALL
 ```
 ## Gnome Extensions
-* [Compiz Windows Effect](https://extensions.gnome.org/extension/3210/compiz-windows-effect/)
-* [Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/)
-* [Rounded Windows Corners](https://github.com/garaevdi/rounded-window-corners)
-* [Fullscreen to Empty Workspace](https://extensions.gnome.org/extension/6072/fullscreen-to-empty-workspace/)
-* [Windows Is Ready Notification Remover](https://extensions.gnome.org/extension/1007/window-is-ready-notification-remover/)
+* [Caffeine](https://github.com/eonpatapon/gnome-shell-extension-caffeine)
+* [Emoji Copy](https://github.com/felipeftn/emoji-copy)
+* [Rounded Windows Corners](https://github.com/ByloTonix/fedora-workstation-afterinstall-notes/blob/main/rounded-window-corners.zip)
+* [Fullscreen to Empty Workspace](https://github.com/ByloTonix/fullscreen-to-new-workspace-gnome-46)
 * [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
-* [Quick Settings Tweaker](https://extensions.gnome.org/extension/5446/quick-settings-tweaker/)
 * [Bluetooth Quick Connect](https://extensions.gnome.org/extension/1401/bluetooth-quick-connect/)
 * [App Indicator Support](https://extensions.gnome.org/extension/615/appindicator-support/)
 * [Wireless HID](https://extensions.gnome.org/extension/4228/wireless-hid/)
-
-* [Battery Time](https://extensions.gnome.org/extension/1475/battery-time/)
-* [Burn My Windows](https://extensions.gnome.org/extension/4679/burn-my-windows/)
-* [Compact Top Bar](https://extensions.gnome.org/extension/5669/compact-top-bar/)
-* [Compiz alike magic lamp effect](https://extensions.gnome.org/extension/3740/compiz-alike-magic-lamp-effect/)
-* [Desktop Cube](https://extensions.gnome.org/extension/4648/desktop-cube/)
-* [Removable Drive Menu](https://extensions.gnome.org/extension/7/removable-drive-menu/)
-* [Notification Banner Position](https://extensions.gnome.org/extension/4105/notification-banner-position/)
-* [Flippery Move Clock](https://extensions.gnome.org/extension/2/move-clock/)
-
-## Apps
-```
-sudo dnf install unzip p7zip p7zip-plugins unrar
-sudo dnf install kolourpaint obs-studio blender htop audacity audacious vlc file-roller
-sudo dnf install neofetch --setop='install_weak_deps=False'
-sudo dnf install waydroid
-```
-[VSCode](https://code.visualstudio.com/sha/download?build=stable&os=linux-rpm-x64)
+* [Legacy GTK3 Theme Scheme Auto Switcher](https://github.com/mukul29/legacy-theme-auto-switcher-gnome-extension)
