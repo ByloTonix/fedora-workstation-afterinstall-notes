@@ -1,7 +1,11 @@
 <h1 align="center">Fedora Workstation AfterInstall Notes</h1>
 <h4 align="center">Things I do after installing Fedora Workstation</h4>
 
-![alt text](https://github.com/ByloTonix/fedora-workstation-afterinstall-notes/blob/main/screenshot0.png)
+![alt text](https://github.com/ByloTonix/fedora-workstation-afterinstall-notes/blob/main/screenshots/screenshot0.png)
+![alt text](https://github.com/ByloTonix/fedora-workstation-afterinstall-notes/blob/main/screenshots/screenshot1.png)
+![alt text](https://github.com/ByloTonix/fedora-workstation-afterinstall-notes/blob/main/screenshots/screenshot2.png)
+![alt text](https://github.com/ByloTonix/fedora-workstation-afterinstall-notes/blob/main/screenshots/screenshot3.png)
+
 
 ## Enabling Root User && Changing Hostname
 
