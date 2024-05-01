@@ -85,6 +85,15 @@ revoqaux ALL=(ALL) NOPASSWD: ALL
 * [App Indicator Support](https://extensions.gnome.org/extension/615/appindicator-support/)
 * [Wireless HID](https://extensions.gnome.org/extension/4228/wireless-hid/)
 * [Legacy GTK3 Theme Scheme Auto Switcher](https://github.com/mukul29/legacy-theme-auto-switcher-gnome-extension)
-
+* [App Hider](https://extensions.gnome.org/extension/5895/app-hider/)
+* [Astra Monitor](https://extensions.gnome.org/extension/6682/astra-monitor/)
+* [Grand Theft Focus](https://extensions.gnome.org/extension/5410/grand-theft-focus/)
+* [GTK4 Desktop Icons](https://extensions.gnome.org/extension/5263/gtk4-desktop-icons-ng-ding/)
+* [Hide Top Bar](https://extensions.gnome.org/extension/545/hide-top-bar/)
+* [Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/)
+* [Panel Corners](https://extensions.gnome.org/extension/4805/panel-corners/)
+* [Quick Settings Tweaker](https://extensions.gnome.org/extension/5446/quick-settings-tweaker/) (with latest fixes from its [GitHub](https://github.com/qwreey/quick-settings-tweaks))
+* [RebootToUEFI](https://extensions.gnome.org/extension/5105/reboottouefi/)
+* 
 ## Other
 * [Adwaita theme for GTK3](https://github.com/lassekongo83/adw-gtk3)
