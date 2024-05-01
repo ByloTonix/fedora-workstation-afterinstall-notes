@@ -94,6 +94,29 @@ revoqaux ALL=(ALL) NOPASSWD: ALL
 * [Panel Corners](https://extensions.gnome.org/extension/4805/panel-corners/)
 * [Quick Settings Tweaker](https://extensions.gnome.org/extension/5446/quick-settings-tweaker/) (with latest fixes from its [GitHub](https://github.com/qwreey/quick-settings-tweaks))
 * [RebootToUEFI](https://extensions.gnome.org/extension/5105/reboottouefi/)
+
+## Apps
+* [BlackBox](https://gitlab.gnome.org/raggesilver/blackbox)
+* [Dconf Editor](https://wiki.gnome.org/Apps/DconfEditor)
+* [Drawing](https://maoschanz.github.io/drawing/)
+* [File Roller](https://wiki.gnome.org/Apps/FileRoller)
+* [Geary](https://wiki.gnome.org/Apps/Geary)
+* [Gnome Tweaks](https://gitlab.gnome.org/GNOME/gnome-tweaks)
+* [Extensions](https://apps.gnome.org/Extensions/)
+* [Sound Recorder](https://wiki.gnome.org/Apps/SoundRecorder)
+* [VS Code](https://code.visualstudio.com/)
+* [Zoom](https://zoom.us/)
+
+## Flatpak Apps
+* [Audio Sharing](https://apps.gnome.org/AudioSharing/)
+* [Cassette](https://github.com/Rirusha/Cassette)
+* [Cohesion](https://github.com/brunofin/cohesion)
+* [Gaia Sky](https://zah.uni-heidelberg.de/gaia/outreach/gaiasky/)
+* [materialgram](https://github.com/kukuruzka165/materialgram)
+* [Metadata Cleaner](https://metadatacleaner.romainvigier.fr)
+* [OBS Studio](https://obsproject.com/)
+* [Steam](https://store.steampowered.com/)
+* [Datcord](https://github.com/gamingdoom/datcord)
 * 
 ## Other
 * [Adwaita theme for GTK3](https://github.com/lassekongo83/adw-gtk3)
