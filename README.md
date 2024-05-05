@@ -121,6 +121,6 @@ revoqaux ALL=(ALL) NOPASSWD: ALL
 * [OBS Studio](https://obsproject.com/)
 * [Steam](https://store.steampowered.com/)
 * [Datcord](https://github.com/gamingdoom/datcord)
-* 
+
 ## Other
 * [Adwaita theme for GTK3](https://github.com/lassekongo83/adw-gtk3)
