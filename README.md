@@ -98,7 +98,8 @@ revoqaux ALL=(ALL) NOPASSWD: ALL
 * [Panel Corners](https://extensions.gnome.org/extension/4805/panel-corners/)
 * [Quick Settings Tweaker](https://extensions.gnome.org/extension/5446/quick-settings-tweaker/) (with latest fixes from its [GitHub](https://github.com/qwreey/quick-settings-tweaks))
 * [RebootToUEFI](https://extensions.gnome.org/extension/5105/reboottouefi/)
-
+* [Media Progress](https://extensions.gnome.org/extension/6940/media-progress/)
+  
 ## Apps
 * [BlackBox](https://gitlab.gnome.org/raggesilver/blackbox)
 * [Dconf Editor](https://wiki.gnome.org/Apps/DconfEditor)
