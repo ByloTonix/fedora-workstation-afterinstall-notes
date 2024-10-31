@@ -58,10 +58,10 @@ scroll-factor=0.25
 
 ## No Password
 ```
-sudo visudo /etc/sudoers.d/010_revoqaux-nopasswd
+sudo visudo /etc/sudoers.d/010_NICKNAME-nopasswd
 ```
 ```
-revoqaux ALL=(ALL) NOPASSWD: ALL
+NICKNAME ALL=(ALL) NOPASSWD: ALL
 ```
 ## Gnome Extensions
 * [Caffeine](https://github.com/eonpatapon/gnome-shell-extension-caffeine)
