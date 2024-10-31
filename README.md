@@ -10,7 +10,7 @@
 ## Changing Hostname
 
 ```
-sudo hostnamectl set-hostname "hostname"
+sudo hostnamectl set-hostname "HOSTNAME"
 ```
 
 ## System Updating
@@ -34,10 +34,10 @@ sudo fwupdmgr update
 
 ## Additional Codecs
 ```
-sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-plugin-libav --exclude=gstreamer1-plugins-bad-free-devel
-sudo dnf install lame\* --exclude=lame-devel
-sudo dnf install gstreamer1-plugin-openh264 mozilla-openh264
-sudo dnf group upgrade --with-optional Multimedia
+sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-plugin-libav --exclude=gstreamer1-plugins-bad-free-devel -y
+sudo dnf install lame\* --exclude=lame-devel -y
+sudo dnf install gstreamer1-plugin-openh264 mozilla-openh264 -y
+sudo dnf group upgrade Multimedia --skip-unavailable
 ```
 
 ## Decreasing TouchPad Scroll Speed
@@ -64,9 +64,9 @@ sudo visudo /etc/sudoers.d/010_NICKNAME-nopasswd
 NICKNAME ALL=(ALL) NOPASSWD: ALL
 ```
 ## Gnome Extensions
-* [Caffeine](https://github.com/eonpatapon/gnome-shell-extension-caffeine)
-* [Emoji Copy](https://github.com/felipeftn/emoji-copy)
-* [Rounded Windows Corners](https://github.com/ByloTonix/fedora-workstation-afterinstall-notes/blob/main/rounded-window-corners.zip)
+* [Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
+* [Emoji Copy](https://extensions.gnome.org/extension/6242/emoji-copy/)
+* [Rounded Windows Corners Reborn](https://extensions.gnome.org/extension/7048/rounded-window-corners-reborn/)
 * [Fullscreen to Empty Workspace](https://github.com/ByloTonix/fullscreen-to-new-workspace-gnome-46)
 * [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
 * [Bluetooth Quick Connect](https://extensions.gnome.org/extension/1401/bluetooth-quick-connect/)
