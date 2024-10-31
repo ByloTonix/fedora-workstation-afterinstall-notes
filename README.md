@@ -67,7 +67,7 @@ NICKNAME ALL=(ALL) NOPASSWD: ALL
 * [Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
 * [Emoji Copy](https://extensions.gnome.org/extension/6242/emoji-copy/)
 * [Rounded Windows Corners Reborn](https://extensions.gnome.org/extension/7048/rounded-window-corners-reborn/)
-* [Fullscreen to Empty Workspace](https://github.com/ByloTonix/fullscreen-to-new-workspace-gnome-46)
+* [Fullscreen to Empty Workspace](https://github.com/ByloTonix/fullscreen-to-new-workspace-gnome)
 * [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
 * [Bluetooth Quick Connect](https://extensions.gnome.org/extension/1401/bluetooth-quick-connect/)
 * [App Indicator Support](https://extensions.gnome.org/extension/615/appindicator-support/)
