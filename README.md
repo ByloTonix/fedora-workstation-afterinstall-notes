@@ -1,5 +1,5 @@
 <h1 align="center">Fedora Workstation AfterInstall Notes</h1>
-<h4 align="center">Things I do after installing Fedora Workstation</h4>
+<h4 align="center">Things I usually do after installing Fedora Workstation</h4>
 
 ![alt text](https://github.com/ByloTonix/fedora-workstation-afterinstall-notes/blob/main/screenshots/screenshot0.png)
 ![alt text](https://github.com/ByloTonix/fedora-workstation-afterinstall-notes/blob/main/screenshots/screenshot1.png)
@@ -12,6 +12,10 @@
 ```
 sudo hostnamectl set-hostname "HOSTNAME"
 ```
+
+## TPM2.0 Decryption
+To decrypt your system without manually entering a password, but using the tpm 2 security module, you can follow this [instruction](https://gist.github.com/jdoss/777e8b52c8d88eb87467935769c98a95)
+
 
 ## System Updating
 ```
