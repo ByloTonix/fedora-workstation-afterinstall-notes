@@ -7,28 +7,12 @@
 ![alt text](https://github.com/ByloTonix/fedora-workstation-afterinstall-notes/blob/main/screenshots/screenshot3.png)
 
 
-## Enabling Root User && Changing Hostname
+## Changing Hostname
 
 ```
-sudo passwd root
-```
-```
-sudo hostnamectl set-hostname "hp"
+sudo hostnamectl set-hostname "hostname"
 ```
 
-## DNF Config for a slightly faster download
-```
-sudo nano /etc/dnf/dnf.conf
-``` 
-```
-[main]
-gpgcheck=True
-installonly_limit=3
-clean_requirements_on_remove=True
-best=False
-skip_if_unavailable=True
-max_parallel_downloads=10
-``` 
 ## System Updating
 ```
 dnf check-update
@@ -37,7 +21,7 @@ dnf check-update
 ## RPM Fusion
 ```
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf groupupdate core
+sudo dnf update @core
 ```
 
 ## Firmware
