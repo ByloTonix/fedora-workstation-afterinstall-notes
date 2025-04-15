@@ -19,7 +19,7 @@ To decrypt your system without manually entering a password, but using the tpm 2
 
 ## System Updating
 ```
-dnf check-update
+sudo dnf update -y
 ```
 
 ## RPM Fusion
